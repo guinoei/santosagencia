@@ -6,12 +6,13 @@ import { Navcontent, Navclick, Logo } from './styles';
 import { IoLogoWhatsapp } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
 
+import logo from "../../assets/img/logo.png"
 
 export const Navbar = () => {
     return (
         <Navcontent>
             <Logo>
-                <Link to='/'><img src="./src/assets/img/logo.png" alt="logo"/></Link>
+                <Link to='/'><img src={logo} alt="logo"/></Link>
             </Logo>
             <Link to='/' className='link-router'>
                 <Navclick className='nomobile'>Início</Navclick>

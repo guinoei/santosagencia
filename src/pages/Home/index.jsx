@@ -8,9 +8,16 @@ import { Footer } from '../../components/Footer'
 import { FaYoutube } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 
-import { Container, Main, Inicio, Content, Text, Contact, Media, Agencia, Title, Banner, Pic, BannerDesc, DescTitle, DescContent, Services, Message, Events, EventTitle, BannerCar, CourseSeg, CourseSegTitle, CarPics, CoursePics } from './styles'
+import { Container, Main, Inicio, Content, Text, Contact, Media, Agencia, Title, Banner, Pic, BannerDesc, DescTitle, DescContent, Services, Message, Events, EventTitle, BannerCar, CourseSeg, CourseSegTitle, CarPics, CoursePics } from './styles';
 
-
+import mediabanner from "../../assets/img/mediabanner.jpg";
+import bannerpic from "../../assets/img/bannerpic.png";
+import carpic1 from "../../assets/img/carpic1.jpeg";
+import carpic2 from "../../assets/img/carpic2.jpeg";
+import carpic3 from "../../assets/img/carpic3.jpeg";
+import coursepic1 from "../../assets/img/coursepic1.jpeg";
+import coursepic2 from "../../assets/img/coursepic2.jpeg";
+import coursepic3 from "../../assets/img/coursepic3.jpeg";
 
 export const Home = () => {
 
@@ -32,7 +39,7 @@ export const Home = () => {
                         </Contact>
                     </Content>
                     <Media>
-                        <img src="./src/assets/img/mediabanner.jpg" />
+                        <img src={mediabanner} alt="banner" />
                     </Media>
                 </Inicio>
                 <Agencia id='agency-scroll'>
@@ -42,7 +49,7 @@ export const Home = () => {
                     </Title>
                     <Banner>
                         <Pic>
-                            <Link to='https://linktr.ee/santosagencia' target="_blank"><img src="./src/assets/img/bannerpic.png" alt="Igor Lucas" /></Link>
+                            <Link to='https://linktr.ee/santosagencia' target="_blank"><img src={bannerpic} alt="Igor Lucas" /></Link>
                         </Pic>
                         <BannerDesc>
                             <DescTitle>
@@ -104,9 +111,9 @@ export const Home = () => {
                     </Events>
                     <CarPics>
                         <div>
-                            <img className="carpic1" src="./src/assets/img/carpic1.jpeg" alt="carpic1"/>
-                            <img className="carpic2" src="./src/assets/img/carpic2.jpeg" alt="carpic2"/>
-                            <img className="carpic3" src="./src/assets/img/carpic3.jpeg" alt="carpic3"/>
+                            <img className="carpic1" src={carpic1} alt="carpic1"/>
+                            <img className="carpic2" src={carpic2} alt="carpic2"/>
+                            <img className="carpic3" src={carpic3} alt="carpic3"/>
                         </div>
                     </CarPics>
                     <CourseSeg>
@@ -115,9 +122,9 @@ export const Home = () => {
                             <h2>Interessado em saber como funciona e quais são os primeiros passos para ter uma de sucesso? Confira nosso curso!</h2>
                         </CourseSegTitle>
                         <CoursePics>
-                            <img className="coursepic1" src="./src/assets/img/coursepic1.jpeg" alt="coursepic1"/>
-                            <img className="coursepic2" src="./src/assets/img/coursepic2.jpeg" alt="coursepic2"/>
-                            <img className="coursepic3" src="./src/assets/img/coursepic3.jpeg" alt="coursepic3"/>
+                            <img className="coursepic1" src={coursepic1} alt="coursepic1"/>
+                            <img className="coursepic2" src={coursepic2} alt="coursepic2"/>
+                            <img className="coursepic3" src={coursepic3} alt="coursepic3"/>
                         </CoursePics>
                         <div>
                             <Link to='/cursos'>

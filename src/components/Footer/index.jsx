@@ -7,7 +7,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 
-
+import logo from "../../assets/img/logo.png"
 
 
 
@@ -19,7 +19,7 @@ import { IoIosMail } from "react-icons/io";
 export const Footer = () => {
     return (
         <FooterCont>
-            <Link to='/'><img src="./src/assets/img/logo.png" alt="logo"/></Link>
+            <Link to='/'><img src={logo} alt="logo"/></Link>
             <Link to='https://wa.me/+5537991023613' target="_blank">
                 <p><IoLogoWhatsapp size={25}/>(37) 9897-9823</p>
             </Link>

@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+import bannercar from "../../assets/img/bannercar.png"
+
+
+
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
@@ -415,7 +419,7 @@ export const BannerCar = styled.div`
     height: 400px;
     border-radius: 30px;
     border: 1px solid black;
-    background-image: url(./src/assets/img/bannercar.png);
+    background-image: url(${bannercar});
     background-position: center;
     background-size: cover;
     display: flex;

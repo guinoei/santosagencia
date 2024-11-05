@@ -1,4 +1,9 @@
 import { createGlobalStyle } from 'styled-components'
+import manage from "../assets/img/manage.png"
+import web from "../assets/img/web.png"
+import editing from "../assets/img/editing.png"
+import brand from "../assets/img/brand.png"
+
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -35,7 +40,7 @@ a {
 }
 
 .brand {
-    background-image: url(./src/assets/img/brand.png);
+    background-image: url(${brand});
     transition: .8s ease;
     mask:
     linear-gradient(135deg, #000c 40%, #000, #000c 60%)
@@ -44,7 +49,7 @@ a {
 }
 
 .web {
-    background-image: url(./src/assets/img/web.png);
+    background-image: url(${web});
     transition: .8s ease;
     mask:
     linear-gradient(135deg, #000c 40%, #000, #000c 60%)
@@ -53,7 +58,7 @@ a {
 }
 
 .manage {
-    background-image: url(./src/assets/img/manage.png);
+    background-image: url(${manage});
     transition: .8s ease;
     mask:
     linear-gradient(135deg, #000c 40%, #000, #000c 60%)
@@ -62,7 +67,7 @@ a {
 }
 
 .editing {
-    background-image: url(./src/assets/img/editing.png);
+    background-image: url(${editing});
     transition: .8s ease;
     mask:
     linear-gradient(135deg, #000c 40%, #000, #000c 60%)
