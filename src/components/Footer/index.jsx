@@ -21,7 +21,7 @@ export const Footer = () => {
         <FooterCont>
             <Link to='/'><img src={logo} alt="logo"/></Link>
             <Link to='https://wa.me/+5537991023613' target="_blank">
-                <p><IoLogoWhatsapp size={25}/>(37) 9897-9823</p>
+                <p><IoLogoWhatsapp size={25}/>(37) 9102-3613</p>
             </Link>
             <Link to='mailto:contatosantosagencia@gmail.com'>
                 <p><IoIosMail size={35}/>contatosantosagencia@gmail.com</p>
